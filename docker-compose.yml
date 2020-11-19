@@ -10,6 +10,7 @@ services:
       - TZ
       - TRANSMISSION_WEB_HOME=/combustion-release/
     ports:
+      # do you actually need this for proper functionality?
       - ${WEB_PORT}:9091
       - ${API_PORT}:51413
       - ${API_PORT}:51413/udp
